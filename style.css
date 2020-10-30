@@ -1,4 +1,77 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: cursive;
+}
+/*
+.carousel-control-prev-icon, .carousel-control-next-icon  {
+
+    background-color: mediumvioletred;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: mediumvioletred;
+}
+*/
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}
+
+li {
+
+    padding: 2px 30px;
+    font-size: 20px;
+}
+div {
+
+    padding: 2px;
+}
+.top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.top svg {
+    position: relative;
+    display: block;
+    width: calc(119% + 1.3px);
+    height: 150px;
+}
+
+.top .shape-fill {
+    fill: #FFFFFF;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.bottom svg {
+    position: relative;
+    display: block;
+    width: calc(119% + 1.3px);
+    height: 150px;
+}
+
+.bottom .shape-fill {
+    fill: #FFFFFF;
+    border-color: white;
 }
