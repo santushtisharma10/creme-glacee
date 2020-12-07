@@ -1,8 +1,13 @@
 <!Doctype html>
 
 <head>
-  <link rel="stylesheet" href={{style.css}}>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  <!--link rel="stylesheet" href="style.css"-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel= "stylesheet" type= "text/css" href= {{ url_for('static', filename='styles/style.css') }}>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlS89y9gy-9i9ju 8u j uiAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -12,14 +17,14 @@
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script-->
 </head>
 
 <body>
 
   <nav class="navbar navbar-expand-md navbar-dark ">
     <!-- Brand -->
-    <a class="navbar-brand" href="#"><img src="im/logo1.PNG"></a>
+    <a class="navbar-brand" href="#"><img src={{ url_for('static', filename='im/logo1.png') }}></a>
 
     <!-- Toggler/collapsibe Button -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -41,7 +46,7 @@
       </ul>
     </div>
   </nav>
-  <img src="im/1.gif" height="600px" width="100%">
+  <img src="static/im/1.gif" height="600px" width="100%">
 
   <div class="container-fluid" style="background-color: rgb(145, 13, 53); padding: 15px;">
     <h1 align="center" style="color: white;">Who are We ?</h1>
@@ -57,7 +62,7 @@
         officia deserunt mollit anim id est laborum.</p>
     </div>
     <div class="col-md-6">
-      <img src="im/White & Black Modern Coffee Quote Photo Collage.png" width="100%" height="400px" class="img-fluid">
+      <img src="static/im/White & Black Modern Coffee Quote Photo Collage.png" width="100%" height="400px" class="img-fluid">
     </div>
 
   </div>
@@ -81,7 +86,7 @@
       <div class="carousel-item active">
         <div class="col-md-3" style="float:left">
           <div class="card mb-2" >
-            <img class="card-img-top" src="im/soft_serve.jpg" height="300px"
+            <img class="card-img-top" src="static/im/soft_serve.jpg" height="300px"
               alt="Card image cap">
             <div class="card-body">
               <h4 class="card-title">Soft Serve</h4>
@@ -92,7 +97,7 @@
         </div>
         <div class="col-md-3" style="float:left">
           <div class="card mb-2">
-            <img class="card-img-top" src="im/rolled_ice_cream.jpg" height="300px"
+            <img class="card-img-top" src="static/im/rolled_ice_cream.jpg" height="300px"
               alt="Card image cap">
             <div class="card-body">
               <h4 class="card-title">Rolled Ice Cream</h4>
@@ -103,7 +108,7 @@
         </div>
         <div class="col-md-3" style="float:left">
           <div class="card mb-2">
-            <img class="card-img-top" src="im/frozen_yogurt.jpg" height="300px"
+            <img class="card-img-top" src="static/im/frozen_yogurt.jpg" height="300px"
               alt="Card image cap">
             <div class="card-body">
               <h4 class="card-title">Frozen Yogurt</h4>
@@ -114,7 +119,7 @@
         </div>
         <div class="col-md-3" style="float:left">
           <div class="card mb-2">
-            <img class="card-img-top" src="im/snow_cream.jpg" height="300px"
+            <img class="card-img-top" src="static/im/snow_cream.jpg" height="300px"
               alt="Card image cap">
             <div class="card-body">
               <h4 class="card-title">Snow Cream</h4>
@@ -128,7 +133,7 @@
       <div class="carousel-item ">
         <div class="col-md-3" style="float:left">
           <div class="card mb-2">
-            <img class="card-img-top" src="im/kulfi.jpg" height="300px"
+            <img class="card-img-top" src="static/im/kulfi.jpg" height="300px"
               alt="Card image cap">
             <div class="card-body">
               <h4 class="card-title">Kulfi</h4>
@@ -139,7 +144,7 @@
         </div>
         <div class="col-md-3" style="float:left">
           <div class="card mb-2">
-            <img class="card-img-top" src="im/gelato.jpg" height="300px"
+            <img class="card-img-top" src="static/im/gelato.jpg" height="300px"
               alt="Card image cap">
             <div class="card-body">
               <h4 class="card-title">Gelato</h4>
@@ -150,7 +155,7 @@
         </div>
         <div class="col-md-3" style="float:left">
           <div class="card mb-2">
-            <img class="card-img-top" src="im/sorbet.jpg" height="300px"
+            <img class="card-img-top" src="static/im/sorbet.jpg" height="300px"
               alt="Card image cap"> 
             <div class="card-body">
               <h4 class="card-title">Sorbet</h4>
@@ -161,7 +166,7 @@
         </div>
         <div class="col-md-3" style="float:left">
           <div class="card mb-2">
-            <img class="card-img-top" src="im/faloodeh.jpg" height="300px"
+            <img class="card-img-top" src="static/im/faloodeh.jpg" height="300px"
               alt="Card image cap">
             <div class="card-body">
               <h4 class="card-title">Faloodeh</h4>
@@ -175,7 +180,7 @@
       <div class="carousel-item">
         <div class="col-md-3" style="float:left">
           <div class="card mb-2">
-            <img class="card-img-top" src="im/granita.jpg" height="300px"
+            <img class="card-img-top" src="static/im/granita.jpg" height="300px"
               alt="Card image cap">
             <div class="card-body">
               <h4 class="card-title">Granita</h4>
@@ -187,7 +192,7 @@
         </div>
         <div class="col-md-3" style="float:left">
           <div class="card mb-2">
-            <img class="card-img-top" src="im/dondurma.jpg" height="300px"
+            <img class="card-img-top" src="static/im/dondurma.jpg" height="300px"
               alt="Card image cap">
             <div class="card-body">
               <h4 class="card-title">Dondurma</h4>
@@ -198,7 +203,7 @@
         </div>
         <div class="col-md-3" style="float:left">
           <div class="card mb-2">
-            <img class="card-img-top" src="im/mochi.jpg" height="300px"
+            <img class="card-img-top" src="static/im/mochi.jpg" height="300px"
               alt="Card image cap">
             <div class="card-body">
               <h4 class="card-title">Mochi</h4>
@@ -209,7 +214,7 @@
         </div>
         <div class="col-md-3" style="float:left">
           <div class="card mb-2">
-            <img class="card-img-top" src="im/italian_ice.jpg" height="300px"
+            <img class="card-img-top" src="static/im/italian_ice.jpg" height="300px"
               alt="Card image cap">
             <div class="card-body">
               <h4 class="card-title">Italian Ice</h4>
@@ -255,7 +260,7 @@
     </div>
     <div class="col-md-6">
       <br>
-      <img src="im/Life is like.png" width="100%" class="img-fluid" height="400px">
+      <img src="static/im/Life is like.png" width="100%" class="img-fluid" height="400px">
     </div>
   </div>
   <!--Connect with us-->
@@ -269,7 +274,7 @@
       <div class="row text-center padding">
         <div class="col-md-4" style="color: white;">
 
-          <img src="im/logo1.PNG" height="50px">
+          <img src="static/im/logo1.PNG" height="50px">
           <br>
           <br>
           <p>****47970</p>
@@ -301,7 +306,9 @@
     </div>
   </footer>
 
-
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>
