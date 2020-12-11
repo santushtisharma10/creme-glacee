@@ -1,19 +1,43 @@
 {%extends "base.html" %}
 {%block head%}
+<style>
+    #btn {
+
+        background-color:  rgb(145, 13, 53);
+        color: white;
+    }
+    #btn:hover {
+        background-color: white;
+        color:  rgb(145, 13, 53);
+        border-color:  rgb(145, 13, 53);
+    }
+    #nxt {
+        color:  rgb(145, 13, 53);
+        border-color:  rgb(145, 13, 53);
+    }
+    #nxt:hover{
+        background-color:  rgb(145, 13, 53);
+        color: white;
+    }
+</style>
 {% endblock%}
 
 {%block body%}
 <br><br>
 <div class="container-fluid">
 <div class="row text-center padding">
-    
-    <div class="col md-6">
-        <br><br>
+    <div class="col-md-6">
+        <br>
+        <h1 style="color: rgb(145, 13, 53);">Sorbet</h1>
+        <br>
        <p class="lead">
-           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio aspernatur facere, dolor eveniet praesentium quia ratione corrupti alias repudiandae reprehenderit quae quidem molestiae quaerat libero harum voluptates saepe non exercitationem.
+        There's no dairy in this fruit-forward frozen treat, making it denser and much richer in taste than traditional ice cream. Sometimes there's even alcohol in the recipe to lower the freezing temperature and create its popular, soft-yet-icy texture. While it's become popular in the U.S., it's been around in the U.K., France, and Australia for even longer.
        </p>
+       <br>
+       <button type="button" class="btn btn-lg" id="btn" >Add To the Cart</button>
+<button type="button" class="btn btn-lg" id="nxt">Buy Right Now</button>
     </div>
-    <div class="col md-6">
+    <div class="col-md-6">
        <img src="static/im/sorbet.jpg" height="400px" > 
     </div>
     
