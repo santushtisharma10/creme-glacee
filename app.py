@@ -55,4 +55,4 @@ def rolled():
     return render_template("rolled.html")
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
